@@ -12,6 +12,11 @@ const MUSIC_NAMES: Record<string, string> = {
   "1": "Spirited Away Theme Song (piano).mp3",
 }
 
+const MUSIC_LOGOS: Record<string, string> = {
+  "0": "/images/merry_go.png",
+  "1": "/images/spirited.png",
+}
+
 export const Player: FC<PlayerProps> = ({ players, muteds, toggle, mute }) => {
   const [activeIndex, setActiveIndex] = useState(0)
 
@@ -20,9 +25,14 @@ export const Player: FC<PlayerProps> = ({ players, muteds, toggle, mute }) => {
   }
 
   return (
-    <div className="flex items-center rounded-[64px] bg-[rgba(255,255,255,0.1)] max-w-700 p-6 w-full justify-between border border-[rgba(255,255,255,0.2)]">
+    <div className="flex items-center rounded-[64px] bg-[rgba(255,255,255,0.1)] max-w-[550px] p-6 w-full justify-between border border-[rgba(255,255,255,0.2)]">
       <div className="flex items-center gap-3">
-        <div className="lg:w-[53px] w-[27px] lg:h-[53px] h-[27px] rounded-full bg-[#d9d9d9]"></div>
+        <div className="lg:w-[53px] w-[27px] lg:h-[53px] h-[27px] rounded-full bg-[#d9d9d9]">
+          <img
+            src={MUSIC_LOGOS[players[activeIndex].id]}
+            alt={MUSIC_LOGOS[players[activeIndex].id]}
+          />
+        </div>
         <p className="lg:max-w-[250px] max-w-[120px] text-white lg:text-[32px] text-base truncate">
           {MUSIC_NAMES[players[activeIndex].id]}
         </p>
