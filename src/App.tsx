@@ -25,9 +25,9 @@ function App() {
       </div>
 
       <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col items-center gap-8">
-        <h2 className="text-white lg:text-64 text-48 whitespace-nowrap">COMING SOON</h2>
+        {/* <h2 className="text-white lg:text-64 text-48 whitespace-nowrap">COMING SOON</h2> */}
 
-        <div className="flex lg:hidden items-center lg:gap-6 gap-3">
+        <div className="flex sm:hidden items-center lg:gap-6 gap-3">
           <a
             href=""
             className="p-2 flex items-center justify-center w-[40px] h-[40px] rounded-full bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.2)]"
@@ -49,10 +49,10 @@ function App() {
         </div>
       </div>
 
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-2">
         <Player players={players} muteds={muteds} toggle={toggle} mute={mute} />
 
-        <div className="lg:flex hidden items-center lg:gap-6 gap-3">
+        <div className="sm:flex hidden items-center lg:gap-6 gap-3">
           <a
             href=""
             className="flex items-center justify-center w-[64px] h-[64px] rounded-full bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.2)]"
