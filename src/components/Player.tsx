@@ -79,7 +79,7 @@ export const Player: FC<PlayerProps> = ({ players, muteds, toggle, mute }) => {
           className="hover:opacity-60 border-none outline-none flex items-center justify-center cursor-pointer"
           onClick={() => mute(activeIndex)}
         >
-          {!muteds[activeIndex].muted ? (
+          {muteds[activeIndex].muted ? (
             <img src="/images/mute.svg" alt="mute" />
           ) : (
             <img src="/images/unmute.svg" alt="un-mute" />
