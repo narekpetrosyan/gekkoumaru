@@ -54,13 +54,15 @@ function App() {
 
         <div className="sm:flex hidden items-center lg:gap-6 gap-3">
           <a
-            href=""
+            href="https://x.com/GekkoumaruBase?t=UAffhgh65GGlX2WIcplAkQ&s=09"
+            target="_blank"
             className="flex items-center justify-center w-[64px] h-[64px] rounded-full bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.2)]"
           >
             <img src="/images/x.svg" alt="x" />
           </a>
           <a
-            href=""
+            href="https://t.me/GekkoumaruOnBase"
+            target="_blank"
             className="flex items-center justify-center w-[64px] h-[64px] rounded-full bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.2)]"
           >
             <img src="/images/tg.svg" alt="tg" />
