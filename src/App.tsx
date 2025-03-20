@@ -68,7 +68,7 @@ function App() {
             <img src="/images/tg.svg" alt="tg" />
           </a>
           <a
-            href=""
+            href="https://dexscreener.com/base/0x8e18a4b48c665b375b5cce025b521ada489d0134"
             className="flex items-center justify-center w-[64px] h-[64px] rounded-full bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.2)]"
           >
             <img src="/images/dexscreener.svg" alt="dexscreener" />
